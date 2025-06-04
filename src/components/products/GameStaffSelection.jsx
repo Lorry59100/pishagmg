@@ -11,7 +11,7 @@ export function GameStaffSelection() {
     const URL_PRODUCTS_LIST = import.meta.env.VITE_PRODUCTS_LIST;
 
     useEffect(() => {
-        console.log("useeffect launched")
+        console.log("useeffect launched 2")
         axios.get(`${URL}${URL_PRODUCTS_LIST}`)
             .then(response => {
                 const productList = response.data.map(product => ({
