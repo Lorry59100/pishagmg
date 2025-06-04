@@ -1,0 +1,208 @@
+/* NAVBAR */
+
+.navbar {
+display: flex;
+justify-content: space-between;
+height: 100px;
+position: sticky;
+z-index: 2;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+
+.navbar.scrolled {
+backdrop-filter: blur(60px) saturate(100%);
+background-color: rgba(0,0,0,.75);
+}
+
+.navbar.hidden .links {
+display: none;
+}
+
+.navbar.at-top .searchbar {
+margin-top: 3.5em; /* Ajuste la marge supérieure selon tes besoins */
+}
+
+.center-menu {
+align-self: center; /* Centre le menu verticalement quand il n'est pas tout en haut */
+}
+
+.orange-logo {
+  filter: var(--orange-logo-filter);
+}
+
+.logo>a {
+display: flex;
+align-items: center;
+height: 100%;
+margin-left: 2em;
+}
+
+.logo>a>h2 {
+width: 30px;
+color: white;
+text-shadow: 1px 1px 1px black;
+}
+
+.menu {
+width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.links {
+display: flex;
+justify-content: center;
+margin-top: 0.5em;
+margin-bottom: 1em;
+position: fixed;
+top: 0;
+width: 90%;
+}
+
+.links>a, .cart-profile>a {
+margin: auto 1em;
+color: white;
+text-shadow: 1px 1px 1px black;
+}
+
+.cart-profile {
+margin-right: 1em;
+display: flex;
+align-items: center;
+color: white;
+position: relative;
+}
+.cart-profile>a>svg, .cart-profile>button {
+filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.cart-profile>button {
+color: white;
+}
+
+/* .cart-profile button:hover > svg:not(.user-icon-circled), .cart-profile a:hover > svg:not(.user-icon-circled) {
+color: var(--orange)
+} */
+
+/* Menu Icone de profil */
+
+.profile-content {
+  width: 180px;
+  /* transform: translateY(160px); */
+  top: 80px;
+  right: 1em;
+  border-radius: 10px;
+  color: white;
+  background: var(--grey-tr);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.profile-content>ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0.5em 0;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-content>ul>li {
+  padding: 0.5em 1em;
+  border-radius: 50px;
+}
+
+.profile-content>ul>li:hover {
+  background: var(--orange);
+  padding: 0.5em 1em;
+  border-radius: 50px;
+}
+
+.user-panel-connected {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-panel-connected>li {
+  padding: 0.5em 1em;
+}
+
+.user-panel-connected>li:hover {
+  background: var(--orange);
+  padding: 0.5em 1em;
+  border-radius: 50px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.id-container {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  color: white;
+}
+
+.cart-number-items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform: translate(-90%, -50%);
+}
+
+.user-img-circled-navbar {
+  padding: 0.1em;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.user-img-circled-navbar:hover {
+  border: 2px solid var(--orange);
+  cursor: pointer;
+}
+
+.neon-toggle-btn-container {
+  width: 50%;
+}
+
+.neon-toggle-btn {
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.neon-toggle-btn>svg {
+  height: 2em;
+  width: 2em;
+  position: absolute;
+  right: 0;
+  left: 100%;
+}
+
+.neon-theme-active-check {
+  color: #4169e1;
+}
+

@@ -1,0 +1,48 @@
+/* GENERAL */
+
+/* Couleurs */
+:root {
+--orange-gradient: linear-gradient(10deg, #ff8000, transparent) #ff4020;
+--orange-gradient-hover: linear-gradient(190deg, #ff2020, transparent) #ff8000;
+--orange: #ff5400;
+--orange-smooth-gradient : linear-gradient(to right, transparent, #ff8000, #ff5400, #ff8000, transparent);
+--orange-logo-filter: invert(56%) sepia(92%) saturate(1011%) hue-rotate(0deg) brightness(104%) contrast(105%);
+--grey : #919191;
+--grey-txt : #999;
+--grey-txt-light : #6d6d6d;
+--grey-tr : rgba(50, 50, 50, 0.8);
+--medium-light: #3d3d3d;
+--medium-dark : #323232;
+--dark: #272727;
+--ultra-dark: #1d1d1d;
+}
+
+/* Eléments */
+body {
+background-color: var(--dark);
+margin: 0;
+padding-top: 110px;
+}
+
+h1,h2,h3,h4,h5 {
+margin: 0;
+}
+
+a:not(.pay-terms, .back-button) {
+text-decoration: none;
+color: inherit; 
+background: none;
+border: none;
+padding: 0;
+margin: 0;
+font: inherit; 
+}
+
+button {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
